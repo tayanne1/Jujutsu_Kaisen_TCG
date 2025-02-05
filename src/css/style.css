@@ -1,0 +1,369 @@
+body {
+  font-family: "Yugioh", serif;
+  background-image: url(../images/5wall.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  gap: 30px;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: center;
+}
+
+.cabecalho .titulo {
+  color: #ffffff;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.cartao {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  flex-direction: column;
+  opacity: 0;
+  display: flex;
+  padding: 5px 4px;
+  border: 15px solid #ffffff;
+  gap: 10px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease, opacity 0.3s ease;
+}
+
+.cartao.selecionado {
+  opacity: 1;
+  z-index: 1;
+}
+
+.lista-personagens {
+  width: 300px;
+  height: 500px;
+  border-radius: 10px;
+  position: relative;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 130px;
+}
+
+.cartao .poder-vida {
+  width: 120px;
+  height: 35px;
+  left: 83%;
+  bottom: 443px;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  position: absolute;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 5px;
+  z-index: 10;
+  font-size: 19px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+}
+
+.cartao .poder-vida-background {
+  width: 109px;
+  height: 30px;
+  left: 80%;
+  bottom: 436px;
+  transform: translateX(-50%);
+  background-color: #b60404;
+  position: absolute;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 2px;
+  z-index: 9;
+}
+
+.cartao .imagem-carta {
+  width: 260px;
+  height: 385px;
+  align-self: center;
+}
+
+.cartao .informacao {
+  position: absolute;
+  bottom: 90px;
+  left: 10px;
+  right: 10px;
+  padding: 10px;
+  max-height: 150px;
+  overflow-y: auto;
+  background-color: #ffffff9b;
+}
+
+.cartao .informacao p {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+
+.cartao .informacao em {
+  font-family: "roboto";
+  font-weight: 500;
+  color: #b60404;
+}
+
+.cartao .tipo {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  font-size: 11px;
+  bottom: 78px;
+  left: 65px;
+  color: white;
+  width: 135px;
+  height: 18px;
+  background-color: #b60404;
+  clip-path: polygon(20% 0, 80% 0, 100% 100%, 0% 100%);
+  padding: 4px;
+  letter-spacing: 3px;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+.cartao .tipo-maior {
+  width: 218px;
+  display: flex;
+  left: 30px;
+  letter-spacing: 1px;
+}
+
+.cartao .nome {
+  color: #ffffff;
+  width: 270px;
+  right: 0px;
+  bottom: 39px;
+  position: absolute;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px;
+  background-color: #b60404;
+  border-bottom: 2px solid #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+
+.cartao .informacoes-ataque {
+  width: 262px;
+  justify-content: flex-end;
+  bottom: 3px;
+  position: absolute;
+  display: flex;
+  gap: 5px;
+  padding: 10px;
+  background-color: #b60404;
+  color: #ffffff;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+}
+
+.cartao .informacao .informacoes-ataque span {
+  font-size: 13px;
+}
+
+.cartao .informacao .descricao {
+  border-bottom: 1px solid #000000;
+  padding: 5px;
+  max-height: 85px;
+  font-size: 13px;
+  overflow-y: scroll;
+}
+
+.fundo-1 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #b60404;
+}
+
+.btn-seta {
+  background-color: #ffffff;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.btn-seta.btn-voltar {
+  transform: rotateY(180deg);
+}
+
+.btn-seta:hover {
+  background-color: #b60404;
+  color: #ffffff;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #b60404;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b60404;
+  border-radius: 10px;
+}
+
+.carta-virada {
+  display: none;
+}
+
+.carta-virada.mostrar-fundo-carta {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 11;
+
+
+  background: url(../images/cartaback1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.cartao:hover {
+  transform: rotateY(calc(-10deg * var(--ratio-x)))
+    rotateX(calc(10deg * var(--ratio-y)));
+  transition: transform 0.2s ease-out;
+}
+
+.cartao.virar {
+  transform: rotateY(180deg);
+}
+
+.esconder {
+  display: none;
+}
+
+.carta-virada.mostrar-fundo-carta::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 12;
+
+
+  mask-image: url("https://assets.codepen.io/907471/holo-card-lines.png?v5");
+  mask-size: 96% 96%;
+
+  mask-repeat: no-repeat;
+  mask-position: center;
+
+  
+  background: radial-gradient(
+      ellipse at 90% calc(0% - var(--ratio-y) * 20%),
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 0, 0, 0.4) 15%,
+      rgba(0, 255, 0, 0.4) 30%,
+      rgba(0, 0, 255, 0.4) 45%,
+      rgba(255, 255, 255, 0.3) 60%,
+      transparent
+    ),
+    linear-gradient(
+      110deg,
+      rgba(255, 0, 0, 0.3) 10%,
+      rgba(0, 255, 0, 0.3) 25%,
+      rgba(0, 0, 255, 0.3) 40%,
+      rgba(255, 255, 255, 0.3) 60%,
+      rgba(0, 0, 0, 0.1) 80%,
+      transparent 100%
+    );
+  opacity: 0.5;
+  mix-blend-mode: hard-light; 
+  pointer-events: none; 
+  transition: opacity 0.2s linear;
+}
+
+.holo-bg,
+.holo-lines,
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.cartao:hover .holo-bg {
+  background: radial-gradient(
+      ellipse at 90% calc(0% - var(--ratio-y) * 20%),
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 0, 0, 0.4) 15%,
+      rgba(0, 255, 0, 0.4) 30%,
+      rgba(0, 0, 255, 0.4) 45%,
+      rgba(255, 255, 255, 0.3) 60%,
+      transparent
+    ),
+    linear-gradient(
+      110deg,
+      rgba(255, 0, 0, 0.3) 10%,
+      rgba(0, 255, 0, 0.3) 25%,
+      rgba(0, 0, 255, 0.3) 40%,
+      rgba(255, 255, 255, 0.3) 60%,
+      rgba(0, 0, 0, 0.1) 80%,
+      transparent 100%
+    );
+  opacity: 0.3; 
+  transition: opacity 0.2s linear;
+  mix-blend-mode: hard-light; 
+}
+
+/* .cartao:hover .circles {
+  opacity: 0.2;  
+  transition: opacity 0.8s ease;
+  background: radial-gradient(
+      ellipse at 50% 50%,
+      rgba(255, 255, 255, 0.1) 0.25rem, 
+      rgba(255, 0, 0, 0.2) 0.25rem,  
+      rgba(0, 255, 0, 0.2) 0.25rem,  
+      rgba(0, 0, 255, 0.2) 0.25rem  
+    );
+  background-size: 1rem 1rem;
+  background-position: left top;
+} */
+
+/* .cartao:hover .circles {
+  opacity: 1;
+} */

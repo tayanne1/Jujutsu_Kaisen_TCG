@@ -1,0 +1,159 @@
+/* Para telas de até 768px */
+@media (max-width: 768px) {
+  .cabecalho {
+    background-position: center;
+    padding: 0 15px;
+  }
+
+  .slider {
+    gap: 10px;
+  }
+
+  .btn-seta-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+  .btn-seta {
+    margin: 0 5px;
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/* Para telas de até 496px */
+@media (max-width: 496px) {
+  .cabecalho .titulo {
+    font-size: 1.5rem;
+  }
+
+  .lista-personagens {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .cartao {
+    padding: 8px;
+    border-width: 8px;
+  }
+
+  .cartao .informacao {
+    bottom: 95px;
+    max-height: 200px;
+  }
+
+  .btn-seta {
+    width: 40px;
+    height: 40px;
+  }
+
+  .btn-seta img {
+    width: 15px;
+  }
+
+  .poder-vida {
+    position: absolute;
+    top: 0 !important;
+    left: 230px !important;
+    width: auto;
+    height: auto;
+  }
+
+  .poder-vida-background {
+    width: 118px !important;
+    height: auto;
+    left: 223px;
+    top: 5px;
+    background-color: #b60404;
+  }
+}
+
+/* Para telas de até 393px */
+@media (max-width: 393px) {
+  .cabecalho .titulo {
+    font-size: 1.2rem;
+  }
+
+  .cartao {
+    padding: 5px;
+    border-width: 6px;
+  }
+
+  .btn-seta {
+    width: 35px;
+    height: 35px;
+  }
+
+  .btn-seta img {
+    width: 12px;
+  }
+
+  .poder-vida {
+    position: absolute;
+    top: -2px !important;
+    left: 232px !important;
+    width: auto;
+    height: auto;
+  }
+
+  .poder-vida-background {
+    width: 90px ;
+    height: 35px !important;
+    left: 30px;
+    top: 5px;
+    background-color: #b60404;
+  }
+}
+
+/* Para telas de até 380px */
+@media (max-width: 380px) {
+  .cabecalho .titulo {
+    font-size: 1rem;
+  }
+
+  .cartao .informacao {
+    max-height: 160px;
+  }
+
+  .btn-seta {
+    width: 30px;
+    height: 30px;
+  }
+
+  .btn-seta img {
+    width: 10px;
+  }
+
+  .poder-vida {
+    top: 5px;
+    left: 25px;
+  }
+
+  .poder-vida-background {
+    width: 80px;
+    height: 35px;
+  }
+}
+
+/* Para telas de até 357px */
+@media (max-width: 357px) {
+  .btn-seta {
+    width: 25px;
+    height: 25px;
+  }
+
+  .btn-seta img {
+    width: 8px;
+  }
+
+  .poder-vida-background {
+    width: 70px;
+    height: 30px;
+  }
+}

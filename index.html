@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/fonts.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/responsivo.css" />
+
+    <title>Jujutsu Kaisen</title>
+  </head>
+
+  <body>
+    <header class="cabecalho">
+      <h1 class="titulo">Jujutsu Kaisen</h1>
+    </header>
+
+    <main class="slider">
+      <!-- Botão para voltar -->
+      <button class="btn-seta btn-voltar" id="btn-voltar" aria-label="Voltar">
+        <img src="src/images/seta.png" alt="seta voltar" />
+      </button>
+
+      <!-- Lista de personagens -->
+      <ul class="lista-personagens">
+        <!-- Cartão 1 - Itadori -->
+        <li class="cartao fundo-1 selecionado">
+          <div class="carta-virada"></div>
+          <h2 class="poder-vida">3000</h2>
+          <div class="poder-vida-background"></div>
+
+          <img
+            src="src/images/imgitadori3.jpg"
+            alt="Itadori"
+            class="imagem-carta"
+          />
+
+          <div class="informacao">
+            <div class="descricao">
+              <p>
+                <strong>Descrição:</strong><br />
+                Yuuji Itadori é um jovem incrivelmente forte, de coração bondoso
+                e determinação inabalável. Após engolir um dedo amaldiçoado de
+                Ryomen Sukuna, tornou-se um receptáculo para o Rei das
+                Maldições. Apesar disso, Yuuji busca salvar vidas enquanto luta
+                para manter Sukuna sob controle. Sua força física e energia
+                amaldiçoada emergente fazem dele um feiticeiro poderoso e
+                imprevisível no campo de batalha.
+              </p>
+              <p>
+                <strong>Habilidades:</strong><br />
+                <em>Força Sobre-Humana:</em> Aumenta ATK em +500 pontos ao
+                atacar diretamente.<br />
+                <em>Controle Parcial de Sukuna:</em> Ganha um ataque adicional
+                por turno, mas perde 200 pontos de HP.<br />
+                <em>Troca de Controle:</em> Chance de ativar Sukuna, causando
+                1000 de dano a todas as cartas no campo.
+              </p>
+            </div>
+          </div>
+
+          <div class="tipo">Feiticeiro</div>
+          <div class="nome">Itadori</div>
+          <div class="informacoes-ataque">
+            <span class="stat">ATK/ 2800</span>
+            <span class="stat">DEF/ 2500</span>
+          </div>
+          <div class="holo-bg"></div>
+          <div class="holo-lines"></div>
+          <div class="circles"></div>
+        </li>
+
+        <!-- Cartão 2 - Sukuna -->
+        <li class="cartao fundo-1">
+          <div class="carta-virada"></div>
+          <h2 class="poder-vida">4000</h2>
+          <div class="poder-vida-background"></div>
+
+          <img
+            src="src/images/imgsakuna5.jpg"
+            alt="Sukuna"
+            class="imagem-carta"
+          />
+
+          <div class="informacao">
+            <div class="descricao">
+              <p>
+                <strong>Descrição:</strong><br />
+                Ryomen Sukuna, também conhecido como o Rei das Maldições, é uma
+                entidade demoníaca incrivelmente poderosa, temida por todos.
+                Apesar de estar preso no corpo de Yuuji Itadori, sua força e
+                inteligência são imensuráveis. Sukuna é cruel, sádico e está
+                sempre em busca de oportunidades para se libertar e reinar sobre
+                o mundo das maldições. Suas habilidades amaldiçoadas fazem dele
+                uma ameaça mortal.
+              </p>
+              <p>
+                <strong>Habilidades:</strong><br />
+                <em>Rei das Maldições:</em> Aumenta o ATK em 1000 pontos quando
+                está no controle de Yuuji.<br />
+                <em>Destruição Imparável:</em> Causa 1000 de dano a uma carta
+                inimiga ao atacar diretamente.<br />
+                <em>Sangue Amaldiçoado:</em> Sacrifica 500 pontos de HP para
+                invocar uma carta amaldiçoada adicional no campo.
+              </p>
+            </div>
+          </div>
+
+          <div class="tipo">Amaldiçoado</div>
+          <div class="nome">Sukuna</div>
+          <div class="informacoes-ataque">
+            <span class="stat">ATK/ 3500</span>
+            <span class="stat">DEF/ 3000</span>
+          </div>
+          <div class="holo-bg"></div>
+          <div class="holo-lines"></div>
+          <div class="circles"></div>
+        </li>
+
+        <!-- Cartão 3 - Megumi -->
+        <li class="cartao fundo-1">
+          <div class="carta-virada"></div>
+          <h2 class="poder-vida">2800</h2>
+          <div class="poder-vida-background"></div>
+          <!-- 7,8,12 -->
+          <img
+            src="src/images/img12.jpg"
+            alt="Megumi Fushiguro"
+            class="imagem-carta"
+          />
+
+          <div class="informacao">
+            <div class="descricao">
+              <p>
+                <strong>Descrição:</strong><br />
+                Megumi Fushiguro é um dos estudantes da Escola de Feitiçaria de
+                Jujutsu e tem uma personalidade séria e focada. Ele é
+                descendente do clã Zenin, mas é mais reservado sobre seu
+                passado. Megumi é habilidoso no uso de técnicas de invocação,
+                utilizando o poder das sombras para invocar Shikigami. Sua
+                habilidade estratégica e seu forte senso de justiça fazem dele
+                um aliado valioso no combate às maldições.
+              </p>
+              <p>
+                <strong>Habilidades:</strong><br />
+                <em>Invocação de Shikigami:</em> Invoca uma criatura para ajudar
+                a atacar, causando 1500 de dano ao inimigo.<br />
+                <em>Técnica de Sombras:</em> Aumenta DEF em 1000 pontos ao
+                proteger uma carta aliada.<br />
+                <em>Amplificação de Força:</em> Aumenta o ATK em +300 pontos
+                quando em campo por mais de 2 turnos.
+              </p>
+            </div>
+          </div>
+
+          <div class="tipo">Feiticeiro</div>
+          <div class="nome">Megumi Fushiguro</div>
+          <div class="informacoes-ataque">
+            <span class="stat">ATK/ 2200</span>
+            <span class="stat">DEF/ 2800</span>
+          </div>
+          <div class="holo-bg"></div>
+          <div class="holo-lines"></div>
+          <div class="circles"></div>
+        </li>
+
+        <!-- Cartão 4 - Satoru Gojo -->
+        <li class="cartao fundo-1">
+          <div class="carta-virada"></div>
+          <h2 class="poder-vida">5000</h2>
+          <div class="poder-vida-background"></div>
+
+          <img
+            src="src/images/sotoro (1).jpg"
+            alt="Satoru Gojo"
+            class="imagem-carta"
+          />
+
+          <div class="informacao">
+            <div class="descricao">
+              <p>
+                <strong>Descrição:</strong><br />
+                Satoru Gojo é o feiticeiro mais forte da atualidade e um dos
+                personagens mais poderosos do universo de Jujutsu Kaisen. Com
+                sua técnica "Limite Infinito" e seu domínio sobre a energia
+                amaldiçoada, Gojo pode manipular o espaço e o tempo de formas
+                quase ilimitadas. Seu poder é imenso e ele é um dos poucos
+                capazes de desafiar as forças mais poderosas das maldições.
+              </p>
+              <p>
+                <strong>Habilidades:</strong><br />
+                <em>Limite Infinito:</em> Reduz o ATK de uma carta inimiga para
+                0 por um turno.<br />
+                <em>O Olho Infinito:</em> Aumenta a DEF de todas as cartas
+                aliadas em +500 pontos por turno.<br />
+                <em>Domínio Completo:</em> Ganha um ataque adicional com dano de
+                1500 pontos após dois turnos em campo.
+              </p>
+            </div>
+          </div>
+
+          <div class="tipo">Feiticeiro</div>
+          <div class="nome">Satoru Gojo</div>
+          <div class="informacoes-ataque">
+            <span class="stat">ATK/ 4000</span>
+            <span class="stat">DEF/ 3500</span>
+          </div>
+          <div class="holo-bg"></div>
+          <div class="holo-lines"></div>
+          <div class="circles"></div>
+        </li>
+
+        <!-- cartão 5 - Nobara Kugisaki -->
+        <li class="cartao fundo-1">
+          <div class="carta-virada"></div>
+          <h2 class="poder-vida">2500</h2>
+          <div class="poder-vida-background"></div>
+          <img
+            src="src/images/imgnobara1.jpg"
+            alt="Nobara Kugisaki"
+            class="imagem-carta"
+          />
+
+          <div class="informacao">
+            <div class="descricao">
+              <p>
+                <strong>Descrição:</strong><br />
+                Nobara Kugisaki é uma estudante de Jujutsu que, apesar de sua
+                aparência descontraída, é uma combatente feroz. Ela usa uma
+                técnica amaldiçoada única que envolve o uso de um martelo e
+                pregos para destruir suas vítimas, com grande habilidade e
+                precisão. Nobara é confiante, determinada e tem uma
+                personalidade forte, o que a torna uma aliada formidável no
+                combate às maldições.
+              </p>
+              <p>
+                <strong>Habilidades:</strong><br />
+                <em>Técnica do Martelo de Ferro:</em> Causa 1000 de dano a uma
+                carta inimiga e reduz a DEF do inimigo em 500 pontos por 2
+                turnos.<br />
+                <em>Vingança Imparável:</em> Aumenta o ATK em +400 pontos após
+                derrotar uma carta inimiga.<br />
+                <em>Resistência Amaldiçoada:</em> Recupera 200 pontos de HP ao
+                usar uma habilidade.
+              </p>
+            </div>
+          </div>
+
+          <div class="tipo">Feiticeira</div>
+          <div class="nome">Nobara Kugisaki</div>
+          <div class="informacoes-ataque">
+            <span class="stat">ATK/ 2400</span>
+            <span class="stat">DEF/ 2200</span>
+          </div>
+          <div class="holo-bg"></div>
+          <div class="holo-lines"></div>
+          <div class="circles"></div>
+        </li>
+
+        <!-- cartão 6 - Mahito -->
+        <li class="cartao fundo-1">
+          <div class="carta-virada"></div>
+          <h2 class="poder-vida">3000</h2>
+          <div class="poder-vida-background"></div>
+          <img
+            src="src/images/imgmahito1.jpg"
+            alt="Mahito"
+            class="imagem-carta"
+          />
+
+          <div class="informacao">
+            <div class="descricao">
+              <p>
+                <strong>Descrição:</strong><br />
+                Mahito é uma Maldição cruel e imprevisível, com a habilidade de
+                manipular almas para alterar as formas físicas e mentais de seus
+                alvos. Ele representa a encarnação das emoções negativas
+                humanas, e sua técnica "Manipulação da Alma" o torna uma ameaça
+                tanto para feiticeiros quanto para outras maldições.
+              </p>
+              <p>
+                <strong>Habilidades:</strong><br />
+                <em>Toque Mortal:</em> Elimina instantaneamente cartas de baixo
+                nível no campo inimigo.<br />
+                <em>Galeria de Cristais:</em> Reduz o ATK de todas as cartas
+                inimigas em 50% por dois turnos.<br />
+                <em>Regeneração de Alma:</em> Recupera 500 pontos de vida após
+                causar dano ao oponente.
+              </p>
+              <p></p>
+            </div>
+          </div>
+
+          <div class="tipo">Maldição</div>
+          <div class="nome">Mahito</div>
+          <div class="informacoes-ataque">
+            <span class="stat">ATK/ 2600</span>
+            <span class="stat">DEF/ 2400</span>
+          </div>
+          <div class="holo-bg"></div>
+          <div class="holo-lines"></div>
+          <div class="circles"></div>
+        </li>
+
+        <!-- cartão 7 - Yuta okkotsu -->
+        <li class="cartao fundo-1">
+          <div class="carta-virada"></div>
+          <h2 class="poder-vida">4500</h2>
+          <div class="poder-vida-background"></div>
+          <img
+            src="src/images/imgyuta1.jpg"
+            alt="Yuta Okkotsu"
+            class="imagem-carta"
+          />
+
+          <div class="informacao">
+            <div class="descricao">
+              <p>
+                <strong>Descrição:</strong><br />
+                Yuta Okkotsu é um dos feiticeiros mais poderosos, reconhecido
+                por sua habilidade de invocar a Rainha das Maldições, Rika
+                Orimoto. Seu domínio sobre energia amaldiçoada, combinado com
+                seu vínculo emocional com Rika, o torna uma força quase
+                imparável no mundo do Jujutsu.
+              </p>
+              <p>
+                <strong>Habilidades:</strong><br />
+                <em>Rika: Rainha das Maldições:</em> Invoca Rika no campo,
+                aumentando o ATK em +2000 por dois turnos.<br />
+                <em>Canalização de Energia:</em> Recupera 1500 pontos de vida
+                após derrotar uma carta inimiga.<br />
+                <em>Técnica Suprema:</em> Causa 2500 de dano direto ao oponente
+                quando ativada.
+              </p>
+            </div>
+          </div>
+
+          <div class="tipo">Feiticeiro</div>
+          <div class="nome">Yuta Okkotsu</div>
+          <div class="informacoes-ataque">
+            <span class="stat">ATK/ 3700</span>
+            <span class="stat">DEF/ 3200</span>
+          </div>
+          <div class="holo-bg"></div>
+          <div class="holo-lines"></div>
+          <div class="circles"></div>
+        </li>
+
+        <!-- cartão 8 - Kenjaku -->
+        <li class="cartao fundo-1">
+          <div class="carta-virada"></div>
+          <h2 class="poder-vida">4200</h2>
+          <div class="poder-vida-background"></div>
+          <img
+            src="src/images/imgkenjaku.jpg"
+            alt="Kenjaku"
+            class="imagem-carta"
+          />
+
+          <div class="informacao">
+            <div class="descricao">
+              <p>
+                <strong>Descrição:</strong><br />
+                Kenjaku é uma entidade antiga e astuta que usa sua técnica de
+                Transferência de Cérebro para implantar sua consciência em
+                diferentes corpos. Ele manipula eventos e feiticeiros ao longo
+                dos séculos, sendo uma ameaça imensa devido ao seu conhecimento
+                e habilidades.
+              </p>
+              <p>
+                <strong>Habilidades:</strong><br />
+                <em>Transferência de Cérebro:</em> Permite assumir o controle de
+                uma carta inimiga por dois turnos.<br />
+                <em>Manipulação Estratégica:</em> Reduz o ATK e DEF de todas as
+                cartas inimigas em 1000 pontos por turno.<br />
+                <em>Despertar Amaldiçoado:</em> Causa 3000 de dano direto ao
+                oponente ao custo de 1500 pontos de vida.
+              </p>
+            </div>
+          </div>
+
+          <div class="tipo tipo-maior">Feiticeiro/Maldição</div>
+          <div class="nome">Kenjaku</div>
+          <div class="informacoes-ataque">
+            <span class="stat">ATK/ 3600</span>
+            <span class="stat">DEF/ 3000</span>
+          </div>
+          <div class="holo-bg"></div>
+          <div class="holo-lines"></div>
+          <div class="circles"></div>
+        </li>
+
+        <!-- cartão 9 - Choso -->
+        <li class="cartao fundo-1">
+          <div class="carta-virada"></div>
+          <h2 class="poder-vida">3500</h2>
+          <div class="poder-vida-background"></div>
+          <img src="src/images/imgchoso2.jpg" alt="Choso" class="imagem-carta" />
+
+          <div class="informacao">
+            <div class="descricao">
+              <p>
+                <strong>Descrição:</strong><br />
+                Choso é um híbrido amaldiçoado-humano e um dos nove Pintores da
+                Morte. Com um vínculo fraternal inabalável, ele luta com todas
+                as forças para proteger seus irmãos. Sua Técnica de Manipulação
+                de Sangue o torna um oponente versátil e imprevisível no campo
+                de batalha.
+              </p>
+              <p>
+                <strong>Habilidades:</strong><br />
+                <em>Flecha de Sangue:</em> Causa 1500 de dano direto ao oponente
+                ao custo de 500 pontos de vida.<br />
+                <em>Explosão Sanguínea:</em> Causa 1000 de dano a todas as
+                cartas inimigas em campo.<br />
+                <em>Defesa de Sangue Coagulado:</em> Aumenta a DEF em +1000
+                pontos por dois turnos ao ativar.
+              </p>
+            </div>
+          </div>
+
+          <div class="tipo tipo-maior">Feiticeiro Amaldiçoado</div>
+          <div class="nome">Choso</div>
+          <div class="informacoes-ataque">
+            <span class="stat">ATK/ 2800</span>
+            <span class="stat">DEF/ 2500</span>
+          </div>
+          <div class="holo-bg"></div>
+          <div class="holo-lines"></div>
+          <div class="circles"></div>
+        </li>
+      </ul>
+
+      <!-- Botão para avançar -->
+      <button
+        class="btn-seta btn-avancar"
+        id="btn-avancar"
+        aria-label="Avançar"
+      >
+        <img src="src/images/seta.png" alt="seta avançar" />
+      </button>
+    </main>
+
+    <script src="src/javascript/index.js"></script>
+  </body>
+</html>
