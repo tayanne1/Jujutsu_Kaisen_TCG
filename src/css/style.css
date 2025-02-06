@@ -7,7 +7,6 @@ body {
   justify-content: center;
   flex-direction: column;
   min-height: 100vh;
-  gap: 30px;
 }
 
 .cabecalho {
@@ -30,8 +29,8 @@ body {
   opacity: 0;
   display: flex;
   padding: 5px 4px;
+  margin-top: 15px;
   border: 15px solid #ffffff;
-  gap: 10px;
   border-radius: 12px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
   transition: transform 0.2s ease, opacity 0.3s ease;
@@ -51,7 +50,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  perspective: 1000px;
+
 }
 
 .slider {
@@ -59,6 +58,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 130px;
+  perspective: 1000px;
 }
 
 .cartao .poder-vida {
@@ -253,7 +253,6 @@ body::-webkit-scrollbar-track {
   left: 0;
   z-index: 11;
 
-
   background: url(../images/cartaback1.jpg);
   background-size: cover;
   background-position: center;
@@ -266,7 +265,7 @@ body::-webkit-scrollbar-track {
 }
 
 .cartao.virar {
-  transform: rotateY(180deg);
+  transform: rotateY(-180deg);
 }
 
 .esconder {
@@ -282,14 +281,12 @@ body::-webkit-scrollbar-track {
   bottom: 0;
   z-index: 12;
 
-
   mask-image: url("https://assets.codepen.io/907471/holo-card-lines.png?v5");
   mask-size: 96% 96%;
 
   mask-repeat: no-repeat;
   mask-position: center;
 
-  
   background: radial-gradient(
       ellipse at 90% calc(0% - var(--ratio-y) * 20%),
       rgba(255, 255, 255, 0.4),
@@ -309,8 +306,8 @@ body::-webkit-scrollbar-track {
       transparent 100%
     );
   opacity: 0.5;
-  mix-blend-mode: hard-light; 
-  pointer-events: none; 
+  mix-blend-mode: hard-light;
+  pointer-events: none;
   transition: opacity 0.2s linear;
 }
 
@@ -345,9 +342,9 @@ body::-webkit-scrollbar-track {
       rgba(0, 0, 0, 0.1) 80%,
       transparent 100%
     );
-  opacity: 0.3; 
+  opacity: 0.3;
   transition: opacity 0.2s linear;
-  mix-blend-mode: hard-light; 
+  mix-blend-mode: hard-light;
 }
 
 /* .cartao:hover .circles {
